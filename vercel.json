@@ -26,7 +26,6 @@
   ],
   "headers": [
     {
-      "src": "/(.*)\\.jsx$",
       "headers": [
         {
           "key": "Content-Type",
