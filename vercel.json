@@ -26,6 +26,7 @@
   ],
   "headers": [
     {
+      "source": "/(.*)\\.jsx$",
       "headers": [
         {
           "key": "Content-Type",
@@ -34,7 +35,7 @@
       ]
     },
     {
-      "src": "/(.*)\\.js$",
+      "source": "/(.*)\\.js$",
       "headers": [
         {
           "key": "Content-Type",
