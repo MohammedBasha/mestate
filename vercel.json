@@ -16,17 +16,30 @@
       "dest": "api/index.js"
     },
     {
-      "src": "/(.*)",
+      "src": "/(.*\\.(js|jsx|css|json|png|jpg|jpeg|svg|ico))",
       "dest": "client/dist/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "client/dist/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/(.*)\\.jsx",
+      "source": "/(.*)\\.jsx$",
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/javascript"
+          "value": "text/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.js$",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
         }
       ]
     }
